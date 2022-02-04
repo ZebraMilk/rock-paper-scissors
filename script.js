@@ -46,39 +46,31 @@ function playRound() {
   // Get computer's choice.
   let computerSelection = computerSelect();
 
-  // run through the cases
-  switch (playerSelection, computerSelection) {
-    // Cases where the player wins
-    case ((playerSelection == "rock") && (computerSelection == "scissors")):
-    case ((playerSelection == "paper") && (computerSelection == "rock")):
-    case ((playerSelection == "scissors") && (computerSelection == "paper")): 
-      playerWins++;
-      gamesPlayed++;
-      alert(`You win! You have ${playerWins} victories, the computer has won ${computerWins} times. Good luck!`)
-      break;
-    // Cases where the computer wins
-    case ((computerSelection == "rock") && (playerSelection == "scissors")):
-    case ((computerSelection == "paper") && (playerSelection == "rock")):
-    case ((computerSelection =="scissors") && (playerSelection == "paper")):
-      computerWins++;
-      gamesPlayed++;
-      alert(`Aw, rats! You lost. You have ${playerWins} wins and the computer has ${computerWins} wins. Good luck!`)
-      break;
-    // Player and Computer tied, do it again (do not update the gamesPlayed counter).
-    case (computerSelection == playerSelection):
-      alert("It's a tie! Let's go again.");
-      //playRound();
-  }
-
-
-
-  console.log(`Computer score: ${computerWins}`);
-  console.log(`Player score: ${playerWins}`);
-
   console.log(`Computer Selection: ${computerSelection}`);
   console.log(`Player Selection is: ${playerSelection}`);
 
-
+  // run through the cases
+  if (computerSelection == playerSelection) {
+    // Player and Computer tied, do it again (do not update the gamesPlayed counter).
+    alert("It's a tie! Let's go again.");
+    return;
+  }
+  if ((playerSelection == "rock" && computerSelection == "scissors") ||
+      (playerSelection == "paper" && computerSelection == "rock") ||
+      (playerSelection == "scissors" && computerSelection == "paper")) {
+    // Cases where the player wins
+    playerWins++;
+    gamesPlayed++;
+    alert(`You win! You have ${playerWins} victories, the computer has won ${computerWins} times. Good luck!`);
+  } else {
+    // Cases where the computer wins
+    computerWins++;
+    gamesPlayed++;
+    alert(`Aw, rats! You lost. You have ${playerWins} wins and the computer has ${computerWins} wins. Good luck!`)
+  }
+ 
+  console.log(`Computer score: ${computerWins}`);
+  console.log(`Player score: ${playerWins}`);
 }
 
 // Get a number of rounds to simulate from the player.
