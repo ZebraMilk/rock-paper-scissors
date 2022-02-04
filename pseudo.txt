@@ -1,0 +1,54 @@
+Need to write a couple of functions.
+
+
+
+function: computerSelection
+  get r/p/s for computer at random
+    get a random number from 1-999, inclusive
+    modulo 3 to get a number 0-2
+    if 0, return rock
+    if 1, return paper
+    else (2), return scissors
+
+function: playerSelection
+  get rock/paper/scissors input from user
+    prompt, and then store value in variable, after .toLowerCase
+
+main function should prompt the user for an odd number of games to play
+
+then simulate that many games of RPS
+several counters:
+  computerWin
+  playerWin
+  gamesPlayed
+
+
+
+Each game:
+
+play the round
+  call playerSelection
+  call computerSelection
+  compare the two values of playerSelection and computerSelection
+    three possibilities, tie, computerWin, playerWin
+    if playerSelection === computerSelection
+      tie
+    if playerSelection is rock && computerSelection is scissors OR
+    if playerSelection is scissors && computerSelection is paper OR
+    if playerSelection is paper && computerSelection is rock
+      player wins
+    else
+      computer wins
+  return tie, computerWin, playerWin
+
+if it's a tie, 
+  play another game 
+repeat until someone wins
+
+add 1 to winCount of whoever winCount
+repeat if not the last game
+
+
+
+at the very end
+compare winCounts and console.log the winner
