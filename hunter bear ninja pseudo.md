@@ -95,6 +95,8 @@ how to fade the whole content in
 do the math/loop before printing the computer's choice and highlighting their choice as well.
 
 ## Challenges
+- Have the buttons be clickable only once until the computer is done thinking.
+- 
 - import a font to use for this project, link in CSS and all that
 - animate stuff
 - maybe when a winner happens, dim the lights around a new div that pops out, overlays, maybe doesn't pop out of the window, but pops out of the page, 

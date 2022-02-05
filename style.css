@@ -1,0 +1,224 @@
+* {
+  font-family: "Fira Code", monospace;
+  color: #273736;
+  
+
+}
+
+img {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  margin: 0px;
+
+}
+
+.foreground {
+  background-image: url(./images/forest-2.jpg);
+  width: auto;
+  height: 1980px;
+  margin: 0;
+
+
+}
+
+.content {
+  display: flex;
+  height: 1980px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.header {
+  justify-self: flex-start;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+#rules {
+  font-weight: 500;
+}
+
+.game {
+  justify-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.choices {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.choice {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  width: 350px;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-box {
+  margin: 0px;
+  box-shadow: 0 4px 8px 8px #273736;
+  border-radius: 10px;
+}
+
+.image-box .player {
+  width: 300px;
+  height: 300px;
+}
+
+.image {
+  border-radius: 10px;
+
+  height: 300px;
+  width: 300px;
+}
+
+button {
+  
+  margin: 16px 12px;
+  padding: .3em 1em;
+  border-style: solid;
+  border-color: #4b5a55;
+  border-radius: 2em;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 900;
+  color: #273736;
+  transition: background-color .2s;
+  transition-timing-function: ease;
+}
+
+button:hover {
+  background-color: #b6bbb5;
+}
+
+.text {
+  color: #b6bbb5;
+}
+
+h2 {
+  color: #b6bbb5;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2%;
+  height: 5rem;
+  width: 20rem;
+  
+  text-align: center;
+
+}
+
+.scoreboard {
+  margin: 2%;
+  display: flex;
+  height: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-between;
+}
+
+.score {
+  margin: 24px;
+  align-items: center;
+  text-align: center;
+  color: #b6bbb5;
+}
+
+.footer {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100px;
+  width: 100%;
+}
+
+ .credits {
+  color: #b6bbb5;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* These settins apply fancy stuff, like animations and things, transforms.. */
+
+.fade-in:hover {
+  animation-name: FadeIn;
+  animation-duration: .5s;
+  transition-timing-function: ease;
+}
+
+.fade-out:hover {
+  animation-name: FadeOut;
+  animation-duration: .25s;
+  transition-timing-function: ease-in;
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes FadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
