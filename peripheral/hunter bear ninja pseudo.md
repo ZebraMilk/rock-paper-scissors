@@ -95,6 +95,9 @@ how to fade the whole content in
 do the math/loop before printing the computer's choice and highlighting their choice as well.
 
 ## Challenges
+
+- Have a toggle button that switches from 5-at a time to unlimited mode (until browser is refreshed...)
+
 - Have the buttons be clickable only once until the computer is done thinking.
 - 
 - import a font to use for this project, link in CSS and all that

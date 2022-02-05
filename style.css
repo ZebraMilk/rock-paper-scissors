@@ -67,7 +67,7 @@ h1 {
 .choice {
   display: flex;
   flex-direction: column;
-  padding: 24px;
+  padding: 12px;
   width: 350px;
   align-items: center;
   justify-content: center;
@@ -75,7 +75,7 @@ h1 {
 
 .image-box {
   margin: 0px;
-  box-shadow: 0 4px 8px 8px #273736;
+  box-shadow: 0 0 8px 8px #273736;
   border-radius: 10px;
 }
 
@@ -102,13 +102,15 @@ button {
   font-size: 20px;
   font-weight: 900;
   color: #273736;
-  transition: background-color .2s;
-  transition-timing-function: ease;
+  transition: background-color .2s ease;
+  
 }
 
 button:hover {
   background-color: #b6bbb5;
 }
+
+
 
 .text {
   color: #b6bbb5;
