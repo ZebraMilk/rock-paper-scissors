@@ -42,8 +42,8 @@ body
     selection
       (image+button
         image container
-        image container (two, one for the player to change borders, one for the computer, computer bordere is a bit bigger and "behind" the player's border...)
-          image
+          image container (two, one for the player to change borders, one for the computer, computer bordere is a bit bigger and "behind" the player's border...)
+            image
         button
           button text) x3
     scoreboard
