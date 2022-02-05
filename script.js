@@ -5,7 +5,7 @@ let playerWins = 0, computerWins = 0, gamesPlayed = 0;
 // get r/p/s for computer at random
 function computerSelect() {
   // Get a random number and modulo 3.
-  let key = ((Math.floor(Math.random()*1000) + 1) % 3);
+  let key = ((Math.floor(Math.random() * 1000) + 1) % 3);
   // Return the selection from an array of the three options.
   return RPS[key];
 }
@@ -16,7 +16,7 @@ function playerSelect() {
   // Validate player's choice, re-prompt if necessaary
   while (playerSelection !== "rock" && playerSelection !== "paper" && playerSelection !== "scissors") {
     // Catch invalid choices and re-prompt.
-    alert ("Nope! Not a valid choice. Try Again.");
+    alert("Nope! Not a valid choice. Try Again.");
     playerSelection = playerSelect()
   }
   // Return the player's choice as a lowercase string.
@@ -28,7 +28,7 @@ function getRounds() {
   // Ask for an integer between 1 and 51, inclusive.
   let games = parseInt(prompt("How many games would you like to play?"));
   // MValidate user input.
-  if (games.length <= 0 || isNaN(games)|| (games % 2) != 1) {
+  if (games.length <= 0 || isNaN(games) || (games % 2) != 1) {
     alert("Please enter an odd number so one of us can win.");
     getRounds();
   } else if (games > 51) {
@@ -56,8 +56,8 @@ function playRound() {
     return;
   }
   if ((playerSelection == "rock" && computerSelection == "scissors") ||
-      (playerSelection == "paper" && computerSelection == "rock") ||
-      (playerSelection == "scissors" && computerSelection == "paper")) {
+    (playerSelection == "paper" && computerSelection == "rock") ||
+    (playerSelection == "scissors" && computerSelection == "paper")) {
     // Cases where the player wins
     playerWins++;
     gamesPlayed++;
@@ -66,9 +66,9 @@ function playRound() {
     // Cases where the computer wins
     computerWins++;
     gamesPlayed++;
-    alert(`Aw, rats! You lost. You have ${playerWins} wins and the computer has ${computerWins} wins. Good luck!`)
+    alert(`Aw, rats! You lost. You have ${playerWins} wins and the computer has ${computerWins} wins. Good luck!`);
   }
- 
+
   console.log(`Computer score: ${computerWins}`);
   console.log(`Player score: ${playerWins}`);
 }
@@ -86,4 +86,3 @@ if (playerWins > computerWins) {
 } else {
   console.log(`Bummer! Computer wins with a score of ${computerWins} to ${playerWins}`)
 }
-
