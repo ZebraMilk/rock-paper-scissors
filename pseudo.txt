@@ -1,54 +1,49 @@
-Need to write a couple of functions.
+pseudocode:
+script:
+player goes to site
+
+ah, see notes in obsidian
 
 
 
-function: computerSelection
-  get r/p/s for computer at random
-    get a random number from 1-999, inclusive
-    modulo 3 to get a number 0-2
-    if 0, return rock
-    if 1, return paper
-    else (2), return scissors
-
-function: playerSelection
-  get rock/paper/scissors input from user
-    prompt, and then store value in variable, after .toLowerCase
-
-main function should prompt the user for an odd number of games to play
-
-then simulate that many games of RPS
-several counters:
-  computerWin
-  playerWin
-  gamesPlayed
 
 
 
-Each game:
-
-play the round
-  call playerSelection
-  call computerSelection
-  compare the two values of playerSelection and computerSelection
-    three possibilities, tie, computerWin, playerWin
-    if playerSelection === computerSelection
-      tie
-    if playerSelection is rock && computerSelection is scissors OR
-    if playerSelection is scissors && computerSelection is paper OR
-    if playerSelection is paper && computerSelection is rock
-      player wins
-    else
-      computer wins
-  return tie, computerWin, playerWin
-
-if it's a tie, 
-  play another game 
-repeat until someone wins
-
-add 1 to winCount of whoever winCount
-repeat if not the last game
 
 
 
-at the very end
-compare winCounts and console.log the winner
+
+
+
+
+
+
+
+
+
+
+
+have three buttons
+
+have an input field or a dropdown menuy that tells the computer when to display the results.
+
+have a scoreboard underneath that tallies the scores over all the games until the browser is refreshed.
+
+have images the player can click on, lil buttons.
+
+have something animate? shadow-box grow/change color?
+
+Have the background move slightly when you scroll? Footer at the bottom with a fun link?
+
+
+make a until the player can play the game by pushing buttons
+make a div to display the results.
+
+
+
+Colors:
+Dark Green - #273736
+less dark green - #404f4c
+lighter green - #4b5a55
+lightest green - #99a099
+lighterest green - #b6bbb5

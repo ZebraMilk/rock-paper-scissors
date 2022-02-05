@@ -1,0 +1,27 @@
+body
+  background
+    header
+      Title
+      rules
+    selection
+      (image+button
+        image container
+        image container (two, one for the player to change borders, one for the computer, computer bordere is a bit bigger and "behind" the player's border...)
+          image
+        button
+          button text) x3
+    scoreboard
+      player
+        scoreboard
+      ties
+        computer
+    Winner display  
+      bold text, you/computer
+    footer
+
+
+~~~
+
+I want buttons to have rounded corners, and a shadowbox that glows a bit while the computer makes a selection
+
+
