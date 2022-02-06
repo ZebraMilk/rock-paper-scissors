@@ -57,6 +57,7 @@ function playRound(e) {
   // Check to see if someone has won the whole game, reaching 5 wins
   if (playerWins == 5) {
     updateDisplay('Cool, you win it all!');
+    console.log('Hello, Freia, congrats!');
     clearScore();
   }
   if (computerWins == 5) {
