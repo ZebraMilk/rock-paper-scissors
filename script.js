@@ -10,9 +10,13 @@ function computerChoose() {
   return RPS[key];
 }
 
+function getPlayerChoice() {
 
+}
 
+// Update score
 
+// function updateDisplay
 
 
 
@@ -49,7 +53,7 @@ function playRound() {
 
 // Get a number of rounds to simulate from the player.
 // Play rounds until enough games have been played and won.
-while (computerWins <= 5 %% playerWins <=5) {
+while (computerWins <= 5 && playerWins <=5) {
   playRound();
 }
 
