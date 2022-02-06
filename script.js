@@ -4,22 +4,16 @@ const HBN = ["hunter", "bear", "ninja",]
 let playerWins = 0, computerWins = 0, gamesPlayed = 0, ties = 0;
 // get all the butons to play with
 const buttons = document.getElementsByTagName("button");
-// convert to array
+// convert buttons to an array
 Array.from(buttons);
+
 // Attach eventListener to each button, listen for click and return the id value of the button
 for (let index = 0; index < buttons.length; index++) {
   buttons[index].addEventListener('click', playRound);
 }
+
 // Get the display so I can (dis)play with the text therein
 const display = document.getElementById('display');
-
-
-
-
-
-
-
-
 
 // get r/p/s for computer at random
 function computerChoose() {
@@ -41,7 +35,7 @@ function playRound(e) {
   // Get computer's choice.
   let computerChoice = computerChoose();
 
-  // run through the cases
+  // Run through the victory cases
   if (computerChoice == playerChoice) {
     // Player and Computer tied, do it again (do not update the gamesPlayed counter).
     ties++;
@@ -62,7 +56,7 @@ function playRound(e) {
   
   // Check to see if someone has won the whole game, reaching 5 wins
   if (playerWins == 5) {
-    updateDisplay('You win it all!');
+    updateDisplay('Cool, you win it all!');
     clearScore();
   }
   if (computerWins == 5) {
@@ -82,7 +76,7 @@ function updateScore() {
   document.getElementById('computer-score').textContent = computerWins;
 
 }
-// function updateDisplay
+// Wipe the scores for a new game of 5 rounds
 function clearScore() {
   playerWins = 0, computerWins = 0, ties = 0, gamesPlayed = 0
 }
