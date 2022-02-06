@@ -51,7 +51,20 @@ function playRound() {
   console.log(`Player score: ${playerWins}`);
 }
 
-// Get a number of rounds to simulate from the player.
+
+const buttons = document.querySelectorAll("button");
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    return button.id;
+  });
+});
+
+
+
+
+
+
+
 // Play rounds until enough games have been played and won.
 while (computerWins <= 5 && playerWins <=5) {
   playRound();
