@@ -102,12 +102,13 @@ button {
   font-size: 20px;
   font-weight: 900;
   color: #273736;
-  transition: background-color .2s ease;
+  transition: all .2s ease;
   
 }
 
 button:hover {
   background-color: #b6bbb5;
+  padding: .3em 1.2em;
 }
 
 
