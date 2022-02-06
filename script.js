@@ -1,3 +1,5 @@
+
+console.log('Hello, Freia. What are we eating for takeout?');
 // Make an array from which to pull computerChoice.
 const HBN = ["hunter", "bear", "ninja",]
 // Initialize counters when page is loaded
@@ -57,7 +59,6 @@ function playRound(e) {
   // Check to see if someone has won the whole game, reaching 5 wins
   if (playerWins == 5) {
     updateDisplay('Cool, you win it all!');
-    console.log('Hello, Freia, congrats!');
     clearScore();
   }
   if (computerWins == 5) {
