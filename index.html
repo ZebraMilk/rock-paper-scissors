@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<script src="./script.js" defer></script>-->
+    <script src="./script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
     <link href="./style.css" rel="stylesheet">
     <title>Hunter, Bear, Ninja</title>
   </head>
+
   <body>
     <div class="background">
       <div class="foreground">
@@ -33,7 +35,7 @@
           <div class="game">
             <!-- Player choice section -->
             <div class="choices">
-              <div class="choice one">
+              <div class="choice hunter">
                 <div class="image-box">
                   <div class="image-box player">
                     <img class="image" src="./images/hunter-900.jpg" alt="Season opener was yesterday.">
@@ -43,7 +45,7 @@
                   <button id="hunter">HUNTER</button>
                 </div>
               </div>
-              <div class="choice two">
+              <div class="choice bear">
                 <div class="image-box">
                   <div class="image-box player">
                     <img class="image" src="./images/bear-900.jpg" alt="Berenstein? Bearenestein? Berenstain.">
@@ -53,7 +55,7 @@
                   <button id="bear">BEAR</button>
                 </div>
               </div>
-              <div class="choice three">
+              <div class="choice ninja">
                 <div class="image-box">
                   <div class="image-box player">
                     <img class="image" src="./images/ninja-900-2.jpg" alt="Three of them, the sequel: Kickback">
@@ -63,25 +65,11 @@
                   <button id="ninja">NINJA</button>
                 </div>
               </div>
-
-              
             </div>
             <!-- display section -->
             <div class="display">
-              <div class="text winner">
-
-              </div>
-              <div class="text loser">
-
-              </div>
-              <div class="text tie">
-
-              </div>
-              <div class="text thinking">
-
-              </div>
-              <div class=" text default">
-                <h2 id="default">Make your choice.</h2>
+              <div class="display-text">
+                <h2 id="display">Make your choice.</h2>
               </div>
             </div>
             <!-- scoreboard section -->
@@ -99,7 +87,7 @@
                 <div class="score">
                   <div id="ties">
                     <h3 class="text">Tie:</h3>
-                    <p class="text" id="ties">
+                    <p class="text" id="tie-count">
                       0
                     </p>
                   </div>
@@ -107,7 +95,7 @@
                 <div class="score">
                   <div id="computer-wins">
                     <h3 class="text">Computer Win:</h3>
-                    <p class="text" id="computerscore">
+                    <p class="text" id="computer-score">
                       0
                     </p>
                   </div>
@@ -120,36 +108,12 @@
           <div></div>
           <!-- footer section -->
           <div class="footer">
-            <div >
+            <div>
               <p class="credits">Made with love by zebramilk</p>
             </div>
           </div>
-
         </div>
       </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   </body>
 </html>
