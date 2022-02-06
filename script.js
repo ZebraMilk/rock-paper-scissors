@@ -1,5 +1,3 @@
-
-console.log('Hello, Freia. What are we eating for takeout?');
 // Make an array from which to pull computerChoice.
 const HBN = ["hunter", "bear", "ninja",]
 // Initialize counters when page is loaded
