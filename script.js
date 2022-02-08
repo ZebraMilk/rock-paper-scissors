@@ -56,11 +56,11 @@ function playRound(e) {
   
   // Check to see if someone has won the whole game, reaching 5 wins
   if (playerWins == 5) {
-    updateDisplay('Cool, you win it all!');
+    updateDisplay('I chose ${computerChoice}.\nCool, you win it all!');
     clearScore();
   }
   if (computerWins == 5) {
-    updateDisplay('Bummer. I win the game!');
+    updateDisplay('I chose ${computerChoice}.\nBummer. I win the game!');
     clearScore();
   }
 }
