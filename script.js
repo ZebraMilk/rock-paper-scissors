@@ -45,11 +45,11 @@ function playRound(e) {
     (playerChoice == "bear" && computerChoice == "ninja")) {
     // Cases where the player wins
     playerWins++;
-    updateDisplay('You Win!');
+    updateDisplay('I chose ${computerChoice}. You Win!');
   } else {
     // Cases where the computer wins
     computerWins++;
-    updateDisplay('I Win!');
+    updateDisplay('I chose ${computerChoice}.I Win!');
   }
   // Update the scoreboard with the accurate total
   updateScore();
@@ -57,7 +57,6 @@ function playRound(e) {
   // Check to see if someone has won the whole game, reaching 5 wins
   if (playerWins == 5) {
     updateDisplay('Cool, you win it all!');
-    console.log('Hello, Freia, congrats!');
     clearScore();
   }
   if (computerWins == 5) {
