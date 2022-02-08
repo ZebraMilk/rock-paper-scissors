@@ -39,28 +39,28 @@ function playRound(e) {
   if (computerChoice == playerChoice) {
     // Player and Computer tied, do it again (do not update the gamesPlayed counter).
     ties++;
-    updateDisplay(`I chose ${computerChoice}.\nIt's a Tie!`);
+    updateDisplay(`I chose ${computerChoice}.` + " It's a Tie!");
   } else if ((playerChoice == "hunter" && computerChoice == "bear") ||
     (playerChoice == "ninja" && computerChoice == "hunter") ||
     (playerChoice == "bear" && computerChoice == "ninja")) {
     // Cases where the player wins
     playerWins++;
-    updateDisplay(`I chose ${computerChoice}.\nYou Win!`);
+    updateDisplay(`I chose ${computerChoice}.` + " You Win!");
   } else {
     // Cases where the computer wins
     computerWins++;
-    updateDisplay(`I chose ${computerChoice}.\nI Win!`);
+    updateDisplay(`I chose ${computerChoice}.` + " I Win!");
   }
   // Update the scoreboard with the accurate total
   updateScore();
   
   // Check to see if someone has won the whole game, reaching 5 wins
   if (playerWins == 5) {
-    updateDisplay(`I chose ${computerChoice}.\nCool, you win it all!`);
+    updateDisplay(`I chose ${computerChoice}.` + " Cool, you win it all!");
     clearScore();
   }
   if (computerWins == 5) {
-    updateDisplay(`I chose ${computerChoice}.\nBummer. I win the game!`);
+    updateDisplay(`I chose ${computerChoice}.` + " Bummer. I win the game!");
     clearScore();
   }
 }
