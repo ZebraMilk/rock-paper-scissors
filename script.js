@@ -45,11 +45,11 @@ function playRound(e) {
     (playerChoice == "bear" && computerChoice == "ninja")) {
     // Cases where the player wins
     playerWins++;
-    updateDisplay('I chose ${computerChoice}. You Win!');
+    updateDisplay('I chose ${computerChoice}.\nYou Win!');
   } else {
     // Cases where the computer wins
     computerWins++;
-    updateDisplay('I chose ${computerChoice}.I Win!');
+    updateDisplay('I chose ${computerChoice}.\nI Win!');
   }
   // Update the scoreboard with the accurate total
   updateScore();
